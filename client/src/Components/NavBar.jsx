@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <div className="menu-container">
       <input
-        onClick={checkHandler}
+        onChange={checkHandler}
         type="checkbox"
         checked={checked}
         className="toggler"

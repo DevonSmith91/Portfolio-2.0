@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import NavBar from './NavBar'
 import "../Styles/App.css"
 import Home from "./Home"
@@ -9,6 +9,11 @@ import {Switch, Route} from "react-router-dom"
 
 
 export default function App() {
+
+	const [msgStatus, setMsgStatus] = useState("")
+
+	console.log(msgStatus)
+
 	return (
     <div>
       <NavBar />
@@ -18,7 +23,7 @@ export default function App() {
             <Route exact path="/" render={() => <Home />} />
             <Route path="/projects" render={() => <Projects />} />
             <Route path="/about" render={() => <AboutMe />} />
-            <Route path="/contact" render={() => <Contact />} />
+						<Route path="/contact" render={() => <Contact msgStatus={msgStatus} setMsgStatus={setMsgStatus} />} />
           </Switch>
         </div>
       </div>

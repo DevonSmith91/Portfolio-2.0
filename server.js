@@ -4,7 +4,7 @@ const path = require("path");
 const app = express();
 const port = process.env.PORT || 5000;
 
-const staticDir = process.env ? "./client/public" : "./client/build";
+const staticDir = process.env.DEV ? "./client/public" : "./client/build";
 app.use(express.static(path.resolve(staticDir)));
 
 // nodemailer
