@@ -23,7 +23,6 @@ export default function Home() {
 						setLoadHead("headShotWrapper");
           }
 		}, 100)
-
 	})
 
 	return (
