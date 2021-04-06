@@ -48,9 +48,12 @@ export default function Contact(props) {
           props.setMsgStatus("Success");
         } else if (response.status === "fail") {
           console.log("didn't work");
-          props.setMsgStatus("Failure");
+					props.setMsgStatus("Failure");
+					
         }
-      });
+			})
+			.catch(error => console.log(error.message))
+		}
   };
 
   let pageContent;
