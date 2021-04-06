@@ -54,7 +54,6 @@ export default function Contact(props) {
 			})
 			.catch(error => console.log(error.message))
 		}
-  };
 
   let pageContent;
   if (props.msgStatus === "") {
