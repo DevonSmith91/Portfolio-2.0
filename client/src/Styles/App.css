@@ -180,7 +180,7 @@ body {
 	color: #00fffa
 }
 
-/* Home */
+/*------------------Home---------------------*/
 
 .homeWrapper {
 	position: absolute;
@@ -207,11 +207,10 @@ body {
 	opacity: .6s;
 }
 
-.nameWrapper.nameLoading{
+.nameWrapper.nameLoading {
 	transform: translateY(-40vh);
 	opacity: 0;
 }
-
 
 .titleWrapper {
 	height: 40vh;
@@ -232,7 +231,7 @@ body {
 	opacity: 1;
 }
 
-.titleWrapper.titleLoading{
+.titleWrapper.titleLoading {
 	transform: translateX(100vw);
 	opacity: 0
 }
@@ -259,7 +258,7 @@ body {
 	opacity: 1;
 }
 
-.headShotWrapper.headShotLoading{
+.headShotWrapper.headShotLoading {
 	transform: translateY(60vh);
 	opacity: 0
 }
@@ -269,7 +268,7 @@ body {
 	border-radius: 20%;
 }
 
-/* About  */
+/* --------------------------About---------------------------- */
 
 .aboutWrapper {
 	position: absolute;
@@ -278,6 +277,84 @@ body {
 	width: 110vw;
 	height: 110vh;
 	background-color: rgba(0, 0, 0, 0.493)
+}
+
+.flipCardContainerLeft {
+	position: absolute;
+	height: 50vh;
+	width: 50vw;
+	top: 15vh;
+	left: 23vw;
+	color: white;
+	transition: .5s;
+}
+
+.flipCardContainerRight {
+	position: absolute;
+	height: 50vh;
+	width: 50vw;
+	top: 15vh;
+	left: 48vw;
+	color: white;
+	transition: .55s;
+}
+
+.rightContainer {
+	transform: translateX(25vw);
+}
+
+.leftContainer {
+	transform: translateX(-25vw);
+}
+
+.frontCard {
+	background-color: #606060d5;
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.backCard {
+	background-color: #212121c0;
+	height: 70vh;
+}
+
+.frontFlipButton {
+	position: absolute;
+	right: 0;
+	height: 6vh;
+	width: 10vw;
+	background-color: blue;
+	transition: .3s;
+	border: none;
+	background-color: #212121c0;
+	color: #ff4fe8;
+	font-size: 2vh;
+	outline: none;
+}
+
+.frontFlipButton:hover {
+	cursor: pointer;
+	color: #00b4b1;
+}
+
+.backFlipButton {
+	position: absolute;
+	right: 0;
+	height: 6vh;
+	width: 10vw;
+	background-color: blue;
+	transition: .3s;
+	border: none;
+	background-color: #606060d5;
+	color: #ff4fe8;
+	font-size: 2vh;
+	outline: none;
+}
+
+.backFlipButton:hover {
+	cursor: pointer;
+	color: #00b4b1;
 }
 
 /*---------------------------------- Contact --------------------------------------*/
@@ -307,7 +384,7 @@ body {
 }
 
 .inputWrapper.loading {
-	transform: translateX(150%);
+	/* transform: translateX(150%); */
 	opacity: 0;
 }
 

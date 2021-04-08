@@ -66,15 +66,17 @@ export default function Contact(props) {
             type="text"
             name="name"
             placeholder="Name"
-            onChange={textInput}
+						onChange={textInput}
+						required
           />
           <input
             id="emailForm"
             className="userInput"
-            type="text"
+            type="email"
             name="email"
             placeholder="Email"
-            onChange={textInput}
+						onChange={textInput}
+						required
           />
           <textarea
             id="messageForm"
@@ -82,7 +84,8 @@ export default function Contact(props) {
             type="text"
             name="message"
             placeholder="Message"
-            onChange={textInput}
+						onChange={textInput}
+						required
           />
           <input className="submitInput" type="submit" />
         </form>
