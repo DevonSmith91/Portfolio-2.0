@@ -26,17 +26,45 @@ export default function AboutMe() {
       <img className="backgrounds" src={Picture} alt="" />
       <div className={containerClass}>
         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-          <div className="frontCard">
+          <div className="frontCardWrapper">
             <button className="frontFlipButton" onClick={handleClick}>
-              Personal Interests
+              About My Life
             </button>
-            This is the front of the ReactCardFlip
+						<div className="languageBlock">Languages:</div>
+						<div className="frameworkBlock">Frameworks:</div>
+						<div className="databaseBlock">Databases:</div>
+						<div className="applicationsBlock">Applications:</div>
+            <div className="frontCard">
+              <ul className="languageUl">
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Node</li>
+							</ul>
+							<ul className="frameworkUl">
+								<li>React</li>
+								<li>Express JS</li>
+								<li>Vue JS</li>
+							</ul>
+						</div>
+						<div className="frontInnerCard">
+							<ul className="databaseUl">
+								<li>MongoDB</li>
+								<li>FireBase</li>
+							</ul>
+							<ul className="applicationsUl">
+								<li>Visual Studio Code</li>
+								<li>GitHub</li>
+							</ul>
+						</div>
           </div>
-          <div className="backCard">
-            This is the back of the ReactCardFlip
+          <div className="backCardWrapper">
             <button className="backFlipButton" onClick={handleClick}>
-              Code Interests
+              About My Work
             </button>
+            <div className="backCard">
+              This is the back of the ReactCardFlip
+            </div>
           </div>
         </ReactCardFlip>
       </div>

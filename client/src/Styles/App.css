@@ -279,6 +279,8 @@ body {
 	background-color: rgba(0, 0, 0, 0.493)
 }
 
+/* About Me container for animations */
+
 .flipCardContainerLeft {
 	position: absolute;
 	height: 50vh;
@@ -307,29 +309,33 @@ body {
 	transform: translateX(-25vw);
 }
 
-.frontCard {
-	background-color: #606060d5;
-	height: 70vh;
+/* Layout for overall Containers */
+
+.frontCardWrapper, .backCardWrapper {
+	position: absolute;
+	top: -5vh;
+	left: -10vw;
+	height: 85vh;
+	width: 70vw;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.backCard {
-	background-color: #212121c0;
-	height: 70vh;
-}
+/* Front Card */
 
 .frontFlipButton {
 	position: absolute;
-	right: 0;
-	height: 6vh;
-	width: 10vw;
-	background-color: blue;
+	right: 8vw;
+	top: 3vh;
+	height: 15vh;
+	width: 13vw;
 	transition: .3s;
 	border: none;
 	background-color: #212121c0;
 	color: #ff4fe8;
-	font-size: 2vh;
+	font-size: 2.25vh;
+	font-weight: 550;
 	outline: none;
 }
 
@@ -338,17 +344,149 @@ body {
 	color: #00b4b1;
 }
 
+.frontCard {
+	background-color: #383838c0;
+	height: 70vh;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.frontInnerCard {
+	position: absolute;
+	background-color: #606060a9;
+	height: 57vh;
+	width: 30vw;
+	bottom: 0;
+	right: 3vw;
+}
+
+.languageBlock {
+	position: absolute;
+	top: 4vh;
+	left: 8vw;
+	background-color: #212121c0;
+	height: 15vh;
+	width: 20vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vh;
+}
+
+.languageUl {
+	text-align: left;
+	list-style: none;
+	position: relative;
+	top: 13vh;
+	left: 7vw;
+}
+
+.languageUl>li {
+	padding: 7px;
+	font-size: 3vh;
+}
+
+.frameworkBlock {
+	position: absolute;
+	top: 42vh;
+	left: 8vw;
+	background-color: #212121c0;
+	height: 15vh;
+	width: 20vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vh;
+}
+
+.frameworkUl {
+	text-align: left;
+	list-style: none;
+	position: relative;
+	top: 32vh;
+	left: 7vw;
+}
+
+.frameworkUl>li {
+	padding: 7px;
+	font-size: 3vh;
+}
+
+.databaseBlock {
+	position: absolute;
+	top: 24vh;
+	right: 20vw;
+	background-color: #212121c0;
+	height: 15vh;
+	width: 20vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vh;
+	z-index: 2;
+}
+
+.databaseUl {
+	text-align: left;
+	list-style: none;
+	position: relative;
+	top: 12vh;
+	left: 4vw;
+}
+
+.databaseUl>li {
+	padding: 10px;
+	font-size: 3vh;
+}
+
+.applicationsBlock {
+	position: absolute;
+	top: 53vh;
+	right: 20vw;
+	background-color: #212121c0;
+	height: 15vh;
+	width: 20vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6vh;
+	z-index: 2;
+}
+
+.applicationsUl {
+	text-align: left;
+	list-style: none;
+	position: relative;
+	top: 31vh;
+	left: 4vw;
+}
+
+.applicationsUl>li {
+	padding: 10px;
+	font-size: 3vh;
+}
+
+/* Back Card */
+
+.backCard {
+	background-color: #212121c0;
+	height: 70vh;
+	width: 50vw;
+}
+
 .backFlipButton {
 	position: absolute;
-	right: 0;
-	height: 6vh;
-	width: 10vw;
-	background-color: blue;
+	left: 8vw;
+	top: 3vh;
+	height: 15vh;
+	width: 13vw;
 	transition: .3s;
 	border: none;
 	background-color: #606060d5;
 	color: #ff4fe8;
-	font-size: 2vh;
+	font-size: 2.25vh;
+	font-weight: 550;
 	outline: none;
 }
 
